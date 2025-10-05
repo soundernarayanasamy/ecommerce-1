@@ -1,4 +1,4 @@
-export default function Page {
+export default function LandingPage() {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white px-4 text-center">
       <h1 className="text-5xl font-extrabold mb-4 tracking-wide">✨ Coming Soon ✨</h1>
