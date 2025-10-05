@@ -1,32 +1,13 @@
-"use client"
-
-import Header from "@/components/layout/header"
-import Footer from "@/components/layout/footer"
-import HeroSection from "@/components/home/hero-section"
-import FeaturesSection from "@/components/home/features-section"
-import ProductCategories from "@/components/home/product-categories"
-import FeaturedProducts from "@/components/home/featured-products"
-import Newsletter from "@/components/home/newsletter"
-import { useEffect } from "react"
-
-export default function LandingPage() {
-  // This useEffect ensures that any hydration mismatches are resolved after initial render
-  useEffect(() => {
-    // This is just to force a re-render after hydration
-    const timer = setTimeout(() => {}, 0)
-    return () => clearTimeout(timer)
-  }, [])
-
+export default function Page {
   return (
-    <div className="min-h-screen bg-tertiary">
-      <Header />
-      <HeroSection />
-      <FeaturesSection />
-      <ProductCategories />
-      <FeaturedProducts />
-      <Newsletter />
-      <Footer />
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white px-4 text-center">
+      <h1 className="text-5xl font-extrabold mb-4 tracking-wide">✨ Coming Soon ✨</h1>
+      <p className="text-lg text-gray-300 max-w-md">
+        All products are currently out of stock. We’re working on something new and exciting for you. Stay tuned!
+      </p>
+      <p className="mt-6 text-gray-500 text-sm">
+        — Quraherbs
+      </p>
     </div>
-  )
+  );
 }
-
